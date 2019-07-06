@@ -90,13 +90,13 @@ install_python_for_CentOS7() {
 }
 
 install_btPanel_for_CentOS() {
-    yum install -y wget && wget -O install.sh https://git.io/fj0zQ && bash install.sh
-    wget -O update.sh https://git.io/fj0zD && bash update.sh pro
+    yum install -y wget && wget -O install.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/install.sh && bash install.sh
+    wget -O update.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/update_pro/update_pro.sh && bash update.sh pro
 }
 
 install_btPanel_for_APT() {
-    wget -O install.sh https://git.io/fj0z5 && bash install.sh
-    wget -O update.sh https://git.io/fj0zD && bash update.sh pro
+    wget -O install.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/install-ubuntu.sh && bash install.sh
+    wget -O update.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/update_pro/update_pro.sh && bash update.sh pro
 }
 
 #破解步骤
@@ -142,13 +142,13 @@ clean_up() {
 # 预安装组件
 components(){
     cd /root
-    wget -O lib.sh https://git.io/fjmak
+    wget -O lib.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/lib.sh
     mv lib.sh /www/server/panel/install
-    wget -O nginx.sh https://git.io/fj0O9
+    wget -O nginx.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/nginx.sh
     mv nginx.sh /www/server/panel/install
     if [ -f /www/server/panel/install/install_soft.sh ]; then
         rm -rf install_soft.sh
-        wget -O install_soft.sh https://git.io/fj03A
+        wget -O install_soft.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/install_soft.sh
         mv install_soft.sh /www/server/panel/install
     fi
 }
@@ -158,7 +158,7 @@ vip_plugin(){
     # 默认安装所有付费高级插件
     cd /www/server/panel/plugin
     if [ ! -d "/masterslave" ]; then
-        wget -O vip_plugin.zip https://git.io/fj0VQ
+        wget -O vip_plugin.zip https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/update_pro/vip_plugin.zip
         unzip vip_plugin.zip
         rm -f vip_plugin.zip
     fi
