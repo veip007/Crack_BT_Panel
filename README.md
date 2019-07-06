@@ -18,11 +18,15 @@
 - 由于破解的过程会输出一些命令，导致会把包含初始化登陆信息的输出结果顶到上面去，请在终端里调整滚动条，<b>找到 Bt-Panel：https://你的域名:8888 一项，下面的 username 和 password 即分别是面板安装完成后，默认的用户名和密码</b>。
 
 ## 官方版安装
+### Centos安装命令：
 ```
-Centos安装命令：
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh
-Ubuntu/Deepin安装命令：
+```
+### Ubuntu/Deepin安装命令：
+```
 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && sudo bash install.sh
-Debian安装命令：
+```
+### Debian安装命令：
+```
 wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && bash install.sh
 ```
