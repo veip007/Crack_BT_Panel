@@ -9,7 +9,7 @@
 <p>如已安装其他种类的面板，或 LNMP 之类的运行环境、一键包，建议备份好数据，重装干净系统再安装</p>
 
 ## 使用方法
-<code>wget --no-check-certificate -qO crack_bt_panel_pro.sh https://git.io/fprzD && bash crack_bt_panel_pro.sh</code>
+```wget --no-check-certificate -qO crack_bt_panel_pro.sh https://raw.githubusercontent.com/veip007/Crack_BT_Panel/master/crack_bt_panel_pro.sh && bash crack_bt_panel_pro.sh```
 
 ## 更新日志
 - 为防止宝塔面板官方封杀此破解方法，面板主安装文件已迁移至本项目仓库，如对安装文件是否有后门等产生疑问，请自行与官方安装文件对比；
